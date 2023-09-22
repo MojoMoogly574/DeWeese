@@ -22,6 +22,7 @@
 		12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */; };
 		12D9BDC02ABCEED900B9B7B4 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */; };
 		12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */; };
+		12D9BDC42ABDBF0200B9B7B4 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDC32ABDBF0200B9B7B4 /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
 		12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		12D9BDC32ABDBF0200B9B7B4 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				12D9BDB22ABCD53D00B9B7B4 /* WorkoutModel.swift */,
 				12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */,
 				12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */,
+				12D9BDC32ABDBF0200B9B7B4 /* ColorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				12D9BDBC2ABCE61200B9B7B4 /* SpeechRecognizer.swift in Sources */,
 				12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */,
+				12D9BDC42ABDBF0200B9B7B4 /* ColorModel.swift in Sources */,
 				12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */,
 				12D9BDBA2ABCD77700B9B7B4 /* HistoryModel.swift in Sources */,
 				12D9BD862ABCCB8B00B9B7B4 /* ContentView.swift in Sources */,

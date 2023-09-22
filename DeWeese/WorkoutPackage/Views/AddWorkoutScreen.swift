@@ -13,7 +13,7 @@ struct AddWorkoutScreen: View {
     @State private var newExercise = ""
     @Environment(\.dismiss) private var dismiss
     //MARK:  WORKOUT TYPES COLORIZATION
-    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga", "Run", "Walk", "Stretching", "Grappling", "Boxing",  "MMA", "Sport", "Golf"]
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga", "Run", "Walk", "Stretch", "Grappling", "Boxing",  "MMA", "Sport", "Golf"]
     var body: some View {
         
         VStack{
