@@ -16,10 +16,45 @@ struct WorkoutDetailView: View {
     @State private var data = WorkoutModel.Data()
     @State private var isPresented = false
     //MARK:  WORKOUT TYPES COLORIZATION
-    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga", "Run", "Walk", "Stretch", "Grappling", "Boxing",  "MMA", "Sport", "Golf"]
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga","Sport", "Run", "Walk", "Grappling", "Boxing", "MMA", "Golf", "Stretch", "Swim"]
+    func colorize(type: String) -> Color {
+        switch type {
+        case "HIIT":
+            return .HIIT
+        case "Recover":
+            return .recover
+        case "Strength":
+            return .strength
+        case "Cardio":
+            return .cardio
+        case "Power":
+            return .power
+        case "Yoga":
+            return .yoga
+        case "Boxing":
+            return .boxing
+        case "Grappling":
+            return .grappling
+        case "Run":
+            return .run
+        case "Walk":
+            return .walk
+        case "Golf":
+            return .golf
+        case "MMA":
+            return .MMA
+        case "Stretch":
+            return .stretch
+        case "Sport":
+            return .sport
+        case "Swim":
+            return .swim
+        default:
+            return .gray
+            
+        }
+    }
     var body: some View {
-        
-        NavigationView {
             
             VStack{
                 
@@ -40,7 +75,7 @@ struct WorkoutDetailView: View {
                                 Text("Workout Type:")
                                     .font(.system(size: 18))
                                     .fontWeight(.bold)
-                                    .padding(.leading, -20)
+                                    .padding(.leading, -30)
                                 Text(workout.workoutType)
                                     .font(.system(size: 16))
                                     .fontWeight(.semibold)
@@ -87,7 +122,7 @@ struct WorkoutDetailView: View {
                 .navigationTitle(workout.workoutName)
                 .fullScreenCover(isPresented: $isPresented) {
                     NavigationView {
-                        EditView()
+                        EditWorkoutView(workoutData: $data)
                             .navigationTitle(workout.workoutName)
                             .navigationBarItems(leading: Button("Cancel") {
                                 isPresented = false
@@ -110,7 +145,6 @@ struct WorkoutDetailView: View {
             }
         }
     }
-}
 #Preview {
     WorkoutDetailView(workout: WorkoutModel.data[0])
 }

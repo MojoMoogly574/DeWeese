@@ -1,24 +1,56 @@
 //
-//  AddWorkoutScreen.swift
+//  EditWorkoutView.swift
 //  DeWeese
 //
-//  Created by J. DeWeese on 9/21/23.
+//  Created by J. DeWeese on 9/22/23.
 //
 
 import SwiftUI
 
-struct AddWorkoutScreen: View {
+struct EditWorkoutView: View {
     //MARK:  PROPERTIES
     @Binding var workoutData: WorkoutModel.Data
-    @State private var newExercise = ""
     @Environment(\.presentationMode) var presentationMode
+    @State private var newExercise = ""
     //MARK:  WORKOUT TYPES COLORIZATION
-    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga", "Run", "Walk", "Stretch", "Grappling", "Boxing",  "MMA", "Sport", "Golf"]
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga","Sport", "Run", "Walk", "Grappling", "Boxing", "MMA", "Golf", "Stretch", "Swim"]
+    func colorize(type: String) -> Color {
+        switch type {
+        case "HIIT":
+            return .HIIT
+        case "Recover":
+            return .recover
+        case "Strength":
+            return .strength
+        case "Cardio":
+            return .cardio
+        case "Power":
+            return .power
+        case "Yoga":
+            return .yoga
+        case "Boxing":
+            return .boxing
+        case "Grappling":
+            return .grappling
+        case "Run":
+            return .run
+        case "Walk":
+            return .walk
+        case "Golf":
+            return .golf
+        case "MMA":
+            return .MMA
+        case "Stretch":
+            return .stretch
+        case "Sport":
+            return .sport
+        case "Swim":
+            return .swim
+        default:
+            return .gray
+        }
+    }
     var body: some View {
-        
-        
-        NavigationView {
-            
             VStack{
                 List{
                     Section(header: Text("Workout Name").foregroundColor(.primary).fontWeight(.bold)) {
@@ -75,25 +107,10 @@ struct AddWorkoutScreen: View {
                     }.foregroundStyle(.primary)
                         .fontWeight(.bold)
                 }.listStyle(InsetGroupedListStyle())
-                //MARK:  SAVE BUTTON
-                Button("Save"){
-                    HapticManager.notification(type: .success)
-                    print("save")
-                    presentationMode.wrappedValue.dismiss()
-                }
-                .font(.system(size: 35))
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .frame(width: UIScreen.main.bounds.width / 1.5)
-                .background(.colorOrange)
-                .cornerRadius(10)
-                .padding(.bottom, 75)
             }
-            .navigationTitle("Add Workout")
+           
         }
     }
-}
 #Preview {
-    AddWorkoutScreen(workoutData: .constant(WorkoutModel.data[0].data))
+    EditWorkoutView(workoutData: .constant(WorkoutModel.data[0].data))
 }

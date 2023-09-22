@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		12B260472ABDF23E00AF9526 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B260462ABDF23E00AF9526 /* WorkoutDetailView.swift */; };
 		12B260492ABDF7C700AF9526 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B260482ABDF7C700AF9526 /* HistoryView.swift */; };
-		12B2604B2ABDF86600AF9526 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2604A2ABDF86600AF9526 /* EditView.swift */; };
+		12B2604B2ABDF86600AF9526 /* EditWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */; };
+		12B2604D2ABE05B900AF9526 /* WorkoutsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2604C2ABE05B900AF9526 /* WorkoutsListView.swift */; };
+		12B260512ABE09E900AF9526 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B260502ABE09E900AF9526 /* WorkoutCardView.swift */; };
 		12D9BD842ABCCB8B00B9B7B4 /* DeWeeseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BD832ABCCB8B00B9B7B4 /* DeWeeseApp.swift */; };
 		12D9BD862ABCCB8B00B9B7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BD852ABCCB8B00B9B7B4 /* ContentView.swift */; };
 		12D9BD882ABCCB8C00B9B7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12D9BD872ABCCB8C00B9B7B4 /* Assets.xcassets */; };
@@ -22,7 +24,6 @@
 		12D9BDB82ABCD58300B9B7B4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12D9BDB72ABCD58300B9B7B4 /* RealmSwift */; };
 		12D9BDBA2ABCD77700B9B7B4 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */; };
 		12D9BDBC2ABCE61200B9B7B4 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */; };
-		12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */; };
 		12D9BDC02ABCEED900B9B7B4 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */; };
 		12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */; };
 		12D9BDC42ABDBF0200B9B7B4 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDC32ABDBF0200B9B7B4 /* ColorModel.swift */; };
@@ -48,7 +49,9 @@
 /* Begin PBXFileReference section */
 		12B260462ABDF23E00AF9526 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		12B260482ABDF7C700AF9526 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		12B2604A2ABDF86600AF9526 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWorkoutView.swift; sourceTree = "<group>"; };
+		12B2604C2ABE05B900AF9526 /* WorkoutsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsListView.swift; sourceTree = "<group>"; };
+		12B260502ABE09E900AF9526 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
 		12D9BD802ABCCB8B00B9B7B4 /* DeWeese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeWeese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D9BD832ABCCB8B00B9B7B4 /* DeWeeseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeWeeseApp.swift; sourceTree = "<group>"; };
 		12D9BD852ABCCB8B00B9B7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		12D9BDB22ABCD53D00B9B7B4 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
-		12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
 		12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		12D9BDC32ABDBF0200B9B7B4 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
@@ -167,10 +169,11 @@
 		12D9BDAF2ABCD4E900B9B7B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */,
 				12B260462ABDF23E00AF9526 /* WorkoutDetailView.swift */,
 				12B260482ABDF7C700AF9526 /* HistoryView.swift */,
-				12B2604A2ABDF86600AF9526 /* EditView.swift */,
+				12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */,
+				12B2604C2ABE05B900AF9526 /* WorkoutsListView.swift */,
+				12B260502ABE09E900AF9526 /* WorkoutCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,8 +337,9 @@
 			files = (
 				12D9BDBC2ABCE61200B9B7B4 /* SpeechRecognizer.swift in Sources */,
 				12B260472ABDF23E00AF9526 /* WorkoutDetailView.swift in Sources */,
-				12B2604B2ABDF86600AF9526 /* EditView.swift in Sources */,
-				12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */,
+				12B260512ABE09E900AF9526 /* WorkoutCardView.swift in Sources */,
+				12B2604D2ABE05B900AF9526 /* WorkoutsListView.swift in Sources */,
+				12B2604B2ABDF86600AF9526 /* EditWorkoutView.swift in Sources */,
 				12D9BDC42ABDBF0200B9B7B4 /* ColorModel.swift in Sources */,
 				12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */,
 				12B260492ABDF7C700AF9526 /* HistoryView.swift in Sources */,

@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct DeWeeseApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        
+            WindowGroup {
+                WorkoutsListView()
+            }
         }
     }
-}
+
