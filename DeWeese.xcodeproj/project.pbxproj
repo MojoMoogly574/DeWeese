@@ -14,6 +14,14 @@
 		12D9BD962ABCCB8C00B9B7B4 /* DeWeeseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BD952ABCCB8C00B9B7B4 /* DeWeeseTests.swift */; };
 		12D9BDA02ABCCB8C00B9B7B4 /* DeWeeseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BD9F2ABCCB8C00B9B7B4 /* DeWeeseUITests.swift */; };
 		12D9BDA22ABCCB8C00B9B7B4 /* DeWeeseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDA12ABCCB8C00B9B7B4 /* DeWeeseUITestsLaunchTests.swift */; };
+		12D9BDB32ABCD53D00B9B7B4 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDB22ABCD53D00B9B7B4 /* WorkoutModel.swift */; };
+		12D9BDB62ABCD58300B9B7B4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 12D9BDB52ABCD58300B9B7B4 /* Realm */; };
+		12D9BDB82ABCD58300B9B7B4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12D9BDB72ABCD58300B9B7B4 /* RealmSwift */; };
+		12D9BDBA2ABCD77700B9B7B4 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */; };
+		12D9BDBC2ABCE61200B9B7B4 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */; };
+		12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */; };
+		12D9BDC02ABCEED900B9B7B4 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */; };
+		12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,12 @@
 		12D9BD9B2ABCCB8C00B9B7B4 /* DeWeeseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeWeeseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D9BD9F2ABCCB8C00B9B7B4 /* DeWeeseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeWeeseUITests.swift; sourceTree = "<group>"; };
 		12D9BDA12ABCCB8C00B9B7B4 /* DeWeeseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeWeeseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12D9BDB22ABCD53D00B9B7B4 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutScreen.swift; sourceTree = "<group>"; };
+		12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D9BDB82ABCD58300B9B7B4 /* RealmSwift in Frameworks */,
+				12D9BDB62ABCD58300B9B7B4 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +111,7 @@
 		12D9BD822ABCCB8B00B9B7B4 /* DeWeese */ = {
 			isa = PBXGroup;
 			children = (
+				12D9BDAE2ABCD4DD00B9B7B4 /* WorkoutPackage */,
 				12D9BD832ABCCB8B00B9B7B4 /* DeWeeseApp.swift */,
 				12D9BD852ABCCB8B00B9B7B4 /* ContentView.swift */,
 				12D9BD872ABCCB8C00B9B7B4 /* Assets.xcassets */,
@@ -129,6 +146,43 @@
 			path = DeWeeseUITests;
 			sourceTree = "<group>";
 		};
+		12D9BDAE2ABCD4DD00B9B7B4 /* WorkoutPackage */ = {
+			isa = PBXGroup;
+			children = (
+				12D9BDB12ABCD50300B9B7B4 /* Support */,
+				12D9BDB02ABCD4F000B9B7B4 /* Models */,
+				12D9BDAF2ABCD4E900B9B7B4 /* Views */,
+			);
+			path = WorkoutPackage;
+			sourceTree = "<group>";
+		};
+		12D9BDAF2ABCD4E900B9B7B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12D9BDBD2ABCE67600B9B7B4 /* AddWorkoutScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12D9BDB02ABCD4F000B9B7B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12D9BDB22ABCD53D00B9B7B4 /* WorkoutModel.swift */,
+				12D9BDB92ABCD77700B9B7B4 /* HistoryModel.swift */,
+				12D9BDBB2ABCE61200B9B7B4 /* SpeechRecognizer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12D9BDB12ABCD50300B9B7B4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				12D9BDBF2ABCEED900B9B7B4 /* BackButton.swift */,
+				12D9BDC12ABCF2EB00B9B7B4 /* HapticManager.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +199,10 @@
 			dependencies = (
 			);
 			name = DeWeese;
+			packageProductDependencies = (
+				12D9BDB52ABCD58300B9B7B4 /* Realm */,
+				12D9BDB72ABCD58300B9B7B4 /* RealmSwift */,
+			);
 			productName = DeWeese;
 			productReference = 12D9BD802ABCCB8B00B9B7B4 /* DeWeese.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 12D9BD772ABCCB8B00B9B7B4;
+			packageReferences = (
+				12D9BDB42ABCD58300B9B7B4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 12D9BD812ABCCB8B00B9B7B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D9BDBC2ABCE61200B9B7B4 /* SpeechRecognizer.swift in Sources */,
+				12D9BDBE2ABCE67600B9B7B4 /* AddWorkoutScreen.swift in Sources */,
+				12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */,
+				12D9BDBA2ABCD77700B9B7B4 /* HistoryModel.swift in Sources */,
 				12D9BD862ABCCB8B00B9B7B4 /* ContentView.swift in Sources */,
+				12D9BDB32ABCD53D00B9B7B4 /* WorkoutModel.swift in Sources */,
+				12D9BDC02ABCEED900B9B7B4 /* BackButton.swift in Sources */,
 				12D9BD842ABCCB8B00B9B7B4 /* DeWeeseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +684,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12D9BDB42ABCD58300B9B7B4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12D9BDB52ABCD58300B9B7B4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12D9BDB42ABCD58300B9B7B4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		12D9BDB72ABCD58300B9B7B4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12D9BDB42ABCD58300B9B7B4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12D9BD782ABCCB8B00B9B7B4 /* Project object */;
 }
