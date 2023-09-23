@@ -60,8 +60,8 @@ struct WorkoutCardView: View {
                     .padding(.leading,4)
                     .padding(2)
                     Text(workout.workoutDescription)
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
+                        .font(.system(size: 14))
+                        .fontWeight(.medium)
                         .foregroundColor(.colorBlue)
                         .padding(.leading, 10)
                         .padding(.top,3)
@@ -70,7 +70,7 @@ struct WorkoutCardView: View {
                     Spacer()
                     Text(workout.workoutType)
                         .padding(.horizontal,6)
-                        .padding(2)
+                        .padding(4)
                         .font(.footnote)
                         .foregroundColor(.primary)
                         .accessibilityLabel("Workout type\(workout.workoutType) ")
@@ -78,8 +78,8 @@ struct WorkoutCardView: View {
                         .overlay(
                             Capsule().stroke(.primary, lineWidth: 2)
                         )
-                }
-            }
+                }.padding(2)
+            }.padding(.horizontal,4)
                
         }.padding(.horizontal, 2)
          //   .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),self.colorize(type: workout.workoutType)]), startPoint: .topLeading, endPoint: .bottomTrailing).opacity(0.6))

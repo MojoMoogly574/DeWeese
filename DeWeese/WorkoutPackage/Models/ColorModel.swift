@@ -10,7 +10,7 @@ import Foundation
 
 
 extension Color {
-    
+
     static let theme = ColorTheme( )
     static let launch = LaunchTheme( )
 }
@@ -42,6 +42,46 @@ struct ColorTheme {
     let MMA = Color("mma")
     let Sport = Color("sport")
     let Golf = Color("golf")
+    
+    //MARK:  WORKOUT TYPES COLORIZATION
+    let types = ["Strength", "Power", "Cardio", "HIIT", "Recover", "Yoga","Sport", "Run", "Walk", "Grappling", "Boxing", "MMA", "Golf", "Stretch", "Swim"]
+    func colorize(type: String) -> Color {
+        switch type {
+        case "HIIT":
+            return .HIIT
+        case "Recover":
+            return .recover
+        case "Strength":
+            return .strength
+        case "Cardio":
+            return .cardio
+        case "Power":
+            return .power
+        case "Yoga":
+            return .yoga
+        case "Boxing":
+            return .boxing
+        case "Grappling":
+            return .grappling
+        case "Run":
+            return .run
+        case "Walk":
+            return .walk
+        case "Golf":
+            return .golf
+        case "MMA":
+            return .MMA
+        case "Stretch":
+            return .stretch
+        case "Sport":
+            return .sport
+        case "Swim":
+            return .swim
+        default:
+            return .gray
+            
+        }
+    }
 }
 
 struct LaunchTheme {

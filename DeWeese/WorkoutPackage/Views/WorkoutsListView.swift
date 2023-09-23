@@ -57,22 +57,27 @@ struct WorkoutsListView: View {
     }
     var body: some View {
         NavigationView{
-            List {
-                ForEach(workouts) { workout in
-                    NavigationLink(destination: WorkoutDetailView(workout: workout)) {
-                        WorkoutCardView(workout: workout)
-                    }.padding()
-                    .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)),self.colorize(type: workout.workoutType)]), startPoint: .bottom, endPoint: .top).opacity(0.6))
-                }.overlay(
-                    RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(self.colorize(type: newWorkoutData.workoutType ), lineWidth: 3.0))
-               
-            }
-            .navigationTitle("Daily Workouts")
-            .navigationBarItems(trailing: Button(action: {
-                isPresented = true
-            }) {
-                Image(systemName: "plus")
+            ZStack {
+              
+                List {
+                    ForEach(workouts) { workout in
+                        NavigationLink(destination: WorkoutDetailView(workout: workout)) {
+                            WorkoutCardView(workout: workout)
+                        }.cornerRadius(12.0)
+                        .padding(7)
+                        .listRowBackground(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)),self.colorize(type: workout.workoutType)]), startPoint: .bottom, endPoint: .top).opacity(0.6))
+                    }.overlay(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(self.colorize(type: newWorkoutData.workoutType ), lineWidth: 3.0))
+                   
+                }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Daily Workouts")
+                .navigationBarItems(trailing: Button(action: {
+                    isPresented = true
+                }) {
+                    Image(systemName: "plus")
             })
+            }
         }
             .sheet(isPresented: $isPresented) {
                 NavigationView {

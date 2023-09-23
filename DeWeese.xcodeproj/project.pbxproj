@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122EF6382ABF5401007F708A /* WorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF6372ABF5401007F708A /* WorkoutScreen.swift */; };
 		12B260472ABDF23E00AF9526 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B260462ABDF23E00AF9526 /* WorkoutDetailView.swift */; };
 		12B260492ABDF7C700AF9526 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B260482ABDF7C700AF9526 /* HistoryView.swift */; };
 		12B2604B2ABDF86600AF9526 /* EditWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122EF6372ABF5401007F708A /* WorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScreen.swift; sourceTree = "<group>"; };
 		12B260462ABDF23E00AF9526 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		12B260482ABDF7C700AF9526 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWorkoutView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				12B2604A2ABDF86600AF9526 /* EditWorkoutView.swift */,
 				12B2604C2ABE05B900AF9526 /* WorkoutsListView.swift */,
 				12B260502ABE09E900AF9526 /* WorkoutCardView.swift */,
+				122EF6372ABF5401007F708A /* WorkoutScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				12D9BDC22ABCF2EB00B9B7B4 /* HapticManager.swift in Sources */,
 				12B260492ABDF7C700AF9526 /* HistoryView.swift in Sources */,
 				12D9BDBA2ABCD77700B9B7B4 /* HistoryModel.swift in Sources */,
+				122EF6382ABF5401007F708A /* WorkoutScreen.swift in Sources */,
 				12D9BD862ABCCB8B00B9B7B4 /* ContentView.swift in Sources */,
 				12D9BDB32ABCD53D00B9B7B4 /* WorkoutModel.swift in Sources */,
 				12D9BDC02ABCEED900B9B7B4 /* BackButton.swift in Sources */,
